@@ -88,7 +88,7 @@ namespace Lista5PR2
                    for (int cont=1; cont==10; cont++)
                     {
                         Console.WriteLine("digite o primeiro numero");
-                        int num5 = int.Parse(Console.ReadLine());
+                        int num5 = int.Parse(Console.ReadLine())
                         
                     }
                         break;
