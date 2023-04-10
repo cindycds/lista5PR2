@@ -93,22 +93,45 @@ namespace Lista5PR2
                         break;
 
                 case 6:
+                    int menor, maior, num6;
+                    Console.WriteLine("Digite um numero qualquer:");
+                    num6 = int.Parse(Console.ReadLine());
+
+                    menor = num6;
+                    maior = num6;
+
+                    for (int i = 0; i < 9; i++) {
+                        Console.WriteLine("Digite um numero qualquer:");
+                        num6 = int.Parse(Console.ReadLine());
+                        if (num6 < menor) {
+                            menor = num6;
+                                Console.WriteLine("o menor numero é:" + menor);
+                        }
+                        else if (num6 < maior);
+                        maior = num6;
+                        Console.WriteLine("o maior numero é:" + maior);
+                    }
+
+                    break;
+
+                case 7:
                     int somapar = 0, somaimpar = 0, num5 = 1;
-                    for (; num5 != 0;)
+                    for (; num5!=0;)
+
                     {
                         Console.WriteLine("Digite um numero: ");
                         num5 = int.Parse(Console.ReadLine());
+
                         if (num5 % 2 == 0)
+                        {
                             somapar = somapar + num5;
+                            Console.WriteLine("total par:" + somapar);
+                        }
 
                         else
-                            somaimpar += num5;
+                            somaimpar = somaimpar + num5;
+                        Console.WriteLine("total impar" + somaimpar);
                     }
-
-
-                        break;
-
-                case 7:
                     break;
 
                 default:
