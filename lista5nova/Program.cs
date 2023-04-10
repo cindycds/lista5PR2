@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -65,6 +66,14 @@ namespace Lista5PR2
                     break;
 
                 case 4:
+                   int soma = 0;
+                    for (; soma < 200; ) {
+                        Console.WriteLine("entre com um numero:");
+                        num = int.Parse(Console.ReadLine());
+                        if (num > 0)
+                            soma = soma + num;
+                        
+                            }
 
                     break;
 
@@ -84,13 +93,19 @@ namespace Lista5PR2
                         break;
 
                 case 6:
-                    
-                   for (int cont=1; cont==10; cont++)
+                    int somapar = 0, somaimpar = 0, num5 = 1;
+                    for (; num5 != 0;)
                     {
-                        Console.WriteLine("digite o primeiro numero");
-                        int num5 = int.Parse(Console.ReadLine())
-                        
+                        Console.WriteLine("Digite um numero: ");
+                        num5 = int.Parse(Console.ReadLine());
+                        if (num5 % 2 == 0)
+                            somapar = somapar + num5;
+
+                        else
+                            somaimpar += num5;
                     }
+
+
                         break;
 
                 case 7:
